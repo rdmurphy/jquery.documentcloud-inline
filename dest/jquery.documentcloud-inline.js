@@ -1,3 +1,4 @@
+/* jquery.documentcloud-inline - 0.0.1 2013-10-07 */
 (function($, window, document, undefined) {
     var pluginName = "documentCloudInline";
     var version = "0.0.1";

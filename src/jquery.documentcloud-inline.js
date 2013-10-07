@@ -1,7 +1,7 @@
 (function($, window, document, undefined) {
 
     var pluginName = 'documentCloudInline';
-    var version = '0.0.1';
+    var version = '<%= version %>';
     var defaults = {
         documentAttribute: 'document',
         noteAttribute: 'note',
