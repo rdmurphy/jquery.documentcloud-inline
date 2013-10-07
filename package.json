@@ -1,0 +1,26 @@
+{
+  "name": "jquery.documentcloud-inline",
+  "version": "0.0.1",
+  "description": "Annotate your text with embeds powered by DocumentCloud notes.",
+  "author": "Ryan Murphy",
+  "license": "BSD",
+  "homepage": "http://github.com/rdmurphy/jquery.documentcloud-inline",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rdmurphy/jquery.documentcloud-inline.git"
+  },
+  "keywords": [
+    "html",
+    "documentcloud",
+    "embeds",
+    "jquery"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}
