@@ -8,10 +8,32 @@
     <link rel="stylesheet" href="../dest/jquery.documentcloud-inline.css">
     <style>
 
+    body {
+        font-family: "Helvetica", Arial, sans-serif;
+    }
+
     .content {
         width: 640px;
         margin: 0 auto;
         line-height: 145%;
+    }
+
+    .note {
+        border-radius: 3px;
+        -webkit-transition: background-color 0.2s ease-out;
+        -moz-transition: background-color 0.2s ease-out;
+        -o-transition: background-color 0.2s ease-out;
+        -ms-transition: background-color 0.2s ease-out;
+        transition: background-color 0.2s ease-out;
+        background-color: rgb(221, 221, 221);
+        color: rgb(34, 34, 34);
+        text-decoration: none;
+        padding: 0 3px;
+        cursor: pointer;
+    }
+
+    .note:hover {
+        background-color: rgb(204, 204, 204);
     }
 
     </style>
@@ -20,9 +42,11 @@
 
 <div class="content">
 
-    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. <a href="http://www.documentcloud.org/documents/801178-twcmission.html#document/p1/a124448" class="note" data-document="801178" data-note="124448">Blessed is he who</a>, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+    <header>
+        <h1>jQuery DocumentCloud Inline Viewer</h1>
+    </header>
 
-    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. <a href="http://www.documentcloud.org/documents/801178-twcmission.html#document/p1/a124448" class="note" data-document="801178" data-note="124448">Blessed is he who</a>, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
 
     <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
 
@@ -37,7 +61,9 @@
 <script src="../dest/jquery.documentcloud-inline.js"></script>
 <script>
 
-$('a.note').documentCloudInline();
+var $notes = $('a.note');
+
+$notes.documentCloudInline();
 
 </script>
 </body>

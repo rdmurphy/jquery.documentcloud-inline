@@ -85,7 +85,7 @@
             this.popupContainer.show();
 
             var topOffset = this.$el.offset().top - $('.DC-note-container').height() - 30;
-            var bottomOffset = this.$el.offset().top;
+            var bottomOffset = this.$el.offset().top + 5;
             var leftOffset = (this.$el.offset().left + (this.$el.width() / 2)) - (this.popupContainer.width() / 2);
 
             this.popupContainer.offset({
